@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Di_Store</title>
+  <link rel="icon" href="icon.webp" type="image/png">
+  <style>
+    /* Общие стили */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f7f7f7;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #e91e63;
+      color: white;
+      padding: 1.5rem 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2rem;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+      transition: opacity 0.3s;
+    }
+
+    nav a:hover {
+      opacity: 0.8;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    /* Секция товаров */
+    .product {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    .product-card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+      padding: 1rem;
+      max-width: 300px;
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+
+    .product-card:hover {
+      transform: scale(1.02);
+    }
+
+    .product-card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .product-card h2 {
+      margin: 1rem 0 0.5rem;
+      font-size: 1.2rem;
+    }
+
+    .price {
+      font-size: 1.3rem;
+      color: #e91e63;
+      margin-bottom: 1rem;
+      font-weight: bold;
+    }
+
+    button {
+      background-color: #e91e63;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #d81b60;
+    }
+
+    /* О нас и контакты */
+    section {
+      margin-bottom: 3rem;
+    }
+
+    section h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #e91e63;
+    }
+
+    section p {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    /* Подвал */
+    footer {
+      background-color: #e91e63;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    /* Адаптивность */
+    @media (max-width: 768px) {
+      .product {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Di_Store - лучший выбор на рынке</h1>
+    <nav>
+      <a href="#products">Каталог</a>
+      <a href="#about">О нас</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+  </header>
+
+  <div class="container">
+
+    <!-- Каталог товаров -->
+     <section id="products" class="product">
+      <div class="product-card">
+        <img src="download.jpg" alt="Кулон Я тебя люблю">
+        <h2>Кулон с проекцией</h2>
+        <p class="price">15 699 ₸</p>
+        <a href="pag2.html"><button>Купить</button></a>
+      </div>
+      <div class="product-card">
+        <img src="download.jpg" alt="Серебряный кулон">
+        <h2>Серебряный кулон</h2>
+        <p class="price">15 699 ₸</p>
+        <a href="pag2.html"><button>Купить</button></a>
+      </div>
+      <div class="product-card">
+        <img src="download.jpg" alt="Кулон с подсветкой">
+        <h2>Кулон с подсветкой</h2>
+        <p class="price">15 699 ₸</p>
+        <a href="pag2.html"><button>Купить</button></a>
+    </section>
+
+    <!-- О нас -->
+    <section id="about">
+      <h2>О нас</h2>
+      <p>Мы — магазин подарков, вдохновленных любовью. Наша особенность — кулоны, в которых фраза "Я тебя люблю" отображается на 100 языках. Идеальный сюрприз для любого повода!</p>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contact">
+      <h2>Контакты</h2>
+      <p>Email: kenzebaeverhan8@gmail.com</p>
+      <p>Телефон: +7 (747) 067-56-06</p>
+      <p>Адрес: г. Караганда, ул. Шахтеров, д. 23/7</p>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Кулоны "Я тебя люблю". Все права защищены.</p>
+  </footer>
+
+</body>
+</html>
